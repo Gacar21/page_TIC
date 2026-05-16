@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GestorPro — Sistema de Inventario y Clientes | Gabrielinus SAS</title>
+  <meta name="description" content="GestorPro es el sistema inteligente de inventario y registro de clientes diseñado para optimizar tus ventas, controlar tu inventario y gestionar tus cobros en tiempo real." />
+  <meta name="keywords" content="sistema de inventario, gestión de clientes, facturación, movimientos, alertas de cobro, dashboard empresarial" />
+  <meta property="og:title" content="GestorPro — Sistema de Inventario y Clientes" />
+  <meta property="og:description" content="Controla tu inventario, factura tus ventas y gestiona tus clientes desde un solo lugar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <img src="LOGO-PRINCIPAL-DORADO.webp" alt="Gabrielinus SAS Logo" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#funciones">Funciones</a></li>
+        <li><a href="#caracteristicas">Características</a></li>
+        <li><a href="#galeria">Plataforma</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#solicitar" class="nav-cta">Solicitar Demo</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Sistema Empresarial Premium
+      </div>
+      <h1 class="hero-title">
+        Gestiona tu negocio con<br />
+        <span class="hero-highlight">precisión y control total</span>
+      </h1>
+      <p class="hero-subtitle">
+        Inventario inteligente, facturación ágil y seguimiento de clientes en tiempo real.
+        Una plataforma diseñada para impulsar el crecimiento de tu empresa.
+      </p>
+      <div class="hero-actions">
+        <a href="#solicitar" class="btn btn-primary" id="hero-cta-primary">Solicitar Demo Gratis</a>
+        <a href="#funciones" class="btn btn-secondary" id="hero-cta-secondary">Ver Funciones</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">360°</span>
+          <span class="stat-label">Visión del negocio</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">7</span>
+          <span class="stat-label">Módulos integrados</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">En la nube</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="mockup-wrapper">
+        <div class="mockup-browser">
+          <div class="browser-bar">
+            <span class="browser-dot red"></span>
+            <span class="browser-dot yellow"></span>
+            <span class="browser-dot green"></span>
+            <div class="browser-url">gestorpro.gabrielinus.co</div>
+          </div>
+          <div class="browser-content">
+            <img src="dashboard.png" alt="Dashboard principal del sistema GestorPro" class="mockup-screenshot" />
+          </div>
+        </div>
+        <div class="floating-card card-alert">
+          <div class="fc-icon">🔔</div>
+          <div class="fc-text">
+            <strong>3 pagos pendientes</strong>
+            <span>Vencen hoy</span>
+          </div>
+        </div>
+        <div class="floating-card card-sales">
+          <div class="fc-icon">📈</div>
+          <div class="fc-text">
+            <strong>+24% ventas</strong>
+            <span>Este mes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU OVERVIEW ===== -->
+  <section class="menu-section">
+    <div class="container">
+      <div class="section-label">Navegación Intuitiva</div>
+      <h2 class="section-title">Todo en un solo lugar</h2>
+      <p class="section-subtitle">Accede a todos los módulos desde un panel limpio y organizado, diseñado para maximizar tu productividad.</p>
+      <div class="menu-showcase">
+        <div class="menu-image-wrapper">
+          <img src="MENU_OPCIONES.png" alt="Menú principal con todas las opciones del sistema: Alertas, Clientes, Ventas, Movimientos, Inventario y Dashboard" class="menu-img" />
+          <div class="menu-caption">Panel de navegación principal del sistema</div>
+        </div>
+        <div class="menu-features">
+          <div class="menu-feature-item">
+            <div class="mf-icon">🔔</div>
+            <div class="mf-content">
+              <h3>Alertas</h3>
+              <p>Avisos inteligentes de cobros próximos y deudas vencidas</p>
+            </div>
+          </div>
+          <div class="menu-feature-item">
+            <div class="mf-icon">👥</div>
+            <div class="mf-content">
+              <h3>Clientes</h3>
+              <p>Registro completo con información de contacto y pagos</p>
+            </div>
+          </div>
+          <div class="menu-feature-item">
+            <div class="mf-icon">🧾</div>
+            <div class="mf-content">
+              <h3>Ventas</h3>
+              <p>Facturador con imágenes, valores y métodos de pago</p>
+            </div>
+          </div>
+          <div class="menu-feature-item">
+            <div class="mf-icon">📊</div>
+            <div class="mf-content">
+              <h3>Movimientos</h3>
+              <p>Registro de compras y ventas con generación de facturas</p>
+            </div>
+          </div>
+          <div class="menu-feature-item">
+            <div class="mf-icon">📦</div>
+            <div class="mf-content">
+              <h3>Inventario</h3>
+              <p>Productos por categorías con imágenes e información detallada</p>
+            </div>
+          </div>
+          <div class="menu-feature-item">
+            <div class="mf-icon">📈</div>
+            <div class="mf-content">
+              <h3>Dashboard</h3>
+              <p>Balance general, gráficas e indicadores clave del negocio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FUNCIONES ===== -->
+  <section class="features-section" id="funciones">
+    <div class="container">
+      <div class="section-label">Módulos del Sistema</div>
+      <h2 class="section-title">Funciones diseñadas para<br /><span class="gold-text">potenciar tu negocio</span></h2>
+      <p class="section-subtitle">Cada módulo está pensado para resolver los desafíos reales de la gestión empresarial, de forma simple y poderosa.</p>
+
+      <!-- ALERTAS -->
+      <div class="feature-block" id="caracteristicas">
+        <div class="feature-content">
+          <div class="feature-tag">Módulo 01</div>
+          <h3 class="feature-title">Alertas Inteligentes</h3>
+          <p class="feature-desc">Mantente siempre al día con el estado financiero de tus clientes. El sistema te notifica automáticamente sobre personas que están próximas a vencer su fecha de pago o que ya tienen deudas pendientes, para que nunca pierdas un cobro.</p>
+          <ul class="feature-list">
+            <li><span class="check">✓</span> Avisos automáticos de vencimientos próximos</li>
+            <li><span class="check">✓</span> Detección de saldos pendientes y deudas activas</li>
+            <li><span class="check">✓</span> Priorización de cobros urgentes</li>
+            <li><span class="check">✓</span> Historial de notificaciones enviadas</li>
+          </ul>
+        </div>
+        <div class="feature-image-box">
+          <img src="Alerta.png" alt="Módulo de Alertas: vista de los avisos de pagos próximos y deudas de clientes" class="feature-img" />
+          <div class="img-label">Vista del módulo de Alertas y notificaciones</div>
+        </div>
+      </div>
+
+      <!-- CLIENTES -->
+      <div class="feature-block reverse">
+        <div class="feature-content">
+          <div class="feature-tag">Módulo 02</div>
+          <h3 class="feature-title">Gestión de Clientes</h3>
+          <p class="feature-desc">Centraliza toda la información de tus clientes en un solo lugar. Desde datos básicos de contacto hasta su historial de compras y estado de cuenta, con categorías personalizadas y facilitación de pagos integrada.</p>
+          <ul class="feature-list">
+            <li><span class="check">✓</span> Registro de información básica y de contacto</li>
+            <li><span class="check">✓</span> Categorización y segmentación de clientes</li>
+            <li><span class="check">✓</span> Facilitación y control de pagos</li>
+            <li><span class="check">✓</span> Historial completo de transacciones</li>
+          </ul>
+        </div>
+        <div class="feature-image-box">
+          <img src="Cliente.png" alt="Módulo de Clientes: registro y gestión de información de contacto, categorías y pagos" class="feature-img" />
+          <div class="img-label">Vista del módulo de Clientes y su información</div>
+        </div>
+      </div>
+
+      <!-- VENTAS -->
+      <div class="feature-block">
+        <div class="feature-content">
+          <div class="feature-tag">Módulo 03</div>
+          <h3 class="feature-title">Facturación de Ventas</h3>
+          <p class="feature-desc">Un facturador moderno y completo que muestra los productos con imágenes, precios y permite seleccionar múltiples métodos de pago. Genera facturas profesionales en segundos y lleva el control exacto de cada venta.</p>
+          <ul class="feature-list">
+            <li><span class="check">✓</span> Catálogo visual de productos con imágenes</li>
+            <li><span class="check">✓</span> Múltiples métodos de pago disponibles</li>
+            <li><span class="check">✓</span> Generación automática de facturas</li>
+            <li><span class="check">✓</span> Descuentos y totales calculados al instante</li>
+          </ul>
+        </div>
+        <div class="feature-image-box">
+          <img src="Factura.png" alt="Módulo de Ventas: facturador con catálogo de productos, imágenes, valores y métodos de pago" class="feature-img" />
+          <div class="img-label">Facturador con catálogo visual y métodos de pago</div>
+        </div>
+      </div>
+
+      <!-- MOVIMIENTOS -->
+      <div class="feature-block reverse">
+        <div class="feature-content">
+          <div class="feature-tag">Módulo 04</div>
+          <h3 class="feature-title">Registro de Movimientos</h3>
+          <p class="feature-desc">Lleva un control detallado de todas las entradas y salidas de tu negocio. Registra compras a proveedores, ventas a clientes y genera facturas automáticas con toda la información necesaria para la contabilidad.</p>
+          <ul class="feature-list">
+            <li><span class="check">✓</span> Registro completo de ventas y compras</li>
+            <li><span class="check">✓</span> Generación automática de facturas</li>
+            <li><span class="check">✓</span> Filtros por fecha, cliente o producto</li>
+            <li><span class="check">✓</span> Exportación de reportes detallados</li>
+          </ul>
+        </div>
+        <div class="feature-image-box">
+          <img src="movimientos.png" alt="Módulo de Movimientos: registro completo de ventas, compras y generación de facturas" class="feature-img" />
+          <div class="img-label">Registro y seguimiento de todos los movimientos</div>
+        </div>
+      </div>
+
+      <!-- INVENTARIO -->
+      <div class="feature-block">
+        <div class="feature-content">
+          <div class="feature-tag">Módulo 05</div>
+          <h3 class="feature-title">Control de Inventario</h3>
+          <p class="feature-desc">Organiza todos tus productos por categorías con imágenes detalladas de cada uno. Controla el stock en tiempo real, recibe alertas de bajo inventario y mantén actualizada toda la información de cada artículo.</p>
+          <ul class="feature-list">
+            <li><span class="check">✓</span> Productos categorizados con imágenes</li>
+            <li><span class="check">✓</span> Control de stock en tiempo real</li>
+            <li><span class="check">✓</span> Alertas de inventario bajo</li>
+            <li><span class="check">✓</span> Información detallada de cada producto</li>
+          </ul>
+        </div>
+        <div class="feature-image-box">
+          <img src="inventario.png" alt="Módulo de Inventario: productos organizados por categorías con imágenes y stock en tiempo real" class="feature-img" />
+          <div class="img-label">Inventario visual organizado por categorías</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== DASHBOARD SECTION ===== -->
+  <section class="dashboard-section" id="galeria">
+    <div class="container">
+      <div class="section-label">Panel de Control</div>
+      <h2 class="section-title">Dashboard Ejecutivo<br /><span class="gold-text">Todo lo que necesitas ver</span></h2>
+      <p class="section-subtitle">Tu centro de comando financiero. Visualiza el estado de tu negocio con gráficas en tiempo real, balances de inventario y métricas de clientes, todo en una sola pantalla.</p>
+      <div class="dashboard-showcase">
+        <div class="dashboard-image-wrapper">
+          <img src="dashboard.png" alt="Dashboard ejecutivo con balance de inventario, cartera de clientes, gráficas y métricas generales del negocio" class="dashboard-img" />
+          <div class="dashboard-caption">Vista completa del dashboard con todos los indicadores del negocio</div>
+        </div>
+        <div class="dashboard-metrics">
+          <div class="metric-card">
+            <div class="metric-icon">📦</div>
+            <h4>Balance de Inventario</h4>
+            <ul>
+              <li>Total de productos en stock</li>
+              <li>Valor total del inventario</li>
+              <li>Gráficas por categoría</li>
+            </ul>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon">👥</div>
+            <h4>Balance de Clientes</h4>
+            <ul>
+              <li>Total de clientes activos</li>
+              <li>Total recaudado</li>
+              <li>Cartera pendiente</li>
+            </ul>
+          </div>
+          <div class="metric-card highlight">
+            <div class="metric-icon">💰</div>
+            <h4>Balance General</h4>
+            <ul>
+              <li>Total recaudado del período</li>
+              <li>Cartera pendiente total</li>
+              <li>Indicadores de rentabilidad</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="why-section">
+    <div class="container">
+      <div class="section-label">¿Por qué elegirnos?</div>
+      <h2 class="section-title">La ventaja de trabajar<br /><span class="gold-text">con GestorPro</span></h2>
+      <div class="why-grid">
+        <div class="why-card" id="why-1">
+          <div class="why-icon">🔒</div>
+          <h3>Ultra Seguro</h3>
+          <p>Tus datos protegidos con encriptación de nivel empresarial. Acceso controlado por roles y permisos.</p>
+        </div>
+        <div class="why-card" id="why-2">
+          <div class="why-icon">⚡</div>
+          <h3>Ágil e Intuitivo</h3>
+          <p>Interfaz limpia y moderna. Tus empleados aprenderán a usarlo en minutos sin capacitación extensa.</p>
+        </div>
+        <div class="why-card" id="why-3">
+          <div class="why-icon">📱</div>
+          <h3>Acceso en Cualquier Lugar</h3>
+          <p>Plataforma web accesible desde cualquier dispositivo. Gestiona tu negocio desde donde estés.</p>
+        </div>
+        <div class="why-card" id="why-4">
+          <div class="why-icon">📊</div>
+          <h3>Reportes en Tiempo Real</h3>
+          <p>Gráficas actualizadas al instante. Toma decisiones basadas en datos precisos y actuales.</p>
+        </div>
+        <div class="why-card" id="why-5">
+          <div class="why-icon">🤝</div>
+          <h3>Soporte Dedicado</h3>
+          <p>Equipo de soporte local comprometido con tu éxito. Atención personalizada en todo momento.</p>
+        </div>
+        <div class="why-card" id="why-6">
+          <div class="why-icon">🎯</div>
+          <h3>Personalizable</h3>
+          <p>Adapta el sistema a las necesidades específicas de tu negocio. Categorías, campos y flujos a tu medida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-content">
+        <h2>¿Listo para transformar tu negocio?</h2>
+        <p>Solicita una demo gratuita y descubre cómo GestorPro puede optimizar tu inventario y gestión de clientes hoy mismo.</p>
+        <a href="#solicitar" class="btn btn-primary btn-large" id="cta-band-btn">Solicitar Demo Ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FORMULARIO DE SOLICITUD ===== -->
+  <section class="contact-section" id="solicitar">
+    <div class="container">
+      <div class="section-label">Solicitar Acceso</div>
+      <h2 class="section-title">Comienza hoy mismo</h2>
+      <p class="section-subtitle">Completa el formulario y nuestro equipo te contactará en menos de 24 horas para agendar tu demo personalizada.</p>
+
+      <div class="contact-layout">
+        <div class="contact-info" id="contacto">
+          <h3>Contáctanos Directamente</h3>
+          <div class="contact-item">
+            <div class="ci-icon">📞</div>
+            <div class="ci-text">
+              <strong>Línea de Atención</strong>
+              <a href="tel:3043913362">304 391 3362</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📧</div>
+            <div class="ci-text">
+              <strong>Correo de Atención</strong>
+              <a href="mailto:Gabriel.carrillori@unipaz.edu.co">Gabriel.carrillori@unipaz.edu.co</a>
+              <a href="mailto:alejandro.galvisve@unipaz.edu.co">alejandro.galvisve@unipaz.edu.co</a>
+              <a href="mailto:lesly.villacobge@unipaz.edu.co">lesly.villacobge@unipaz.edu.co</a>
+            </div>
+          </div>
+          <div class="contact-tagline">
+            <p>Nuestro equipo de expertos está listo para ayudarte a implementar el sistema que tu negocio necesita.</p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="solicitudForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required />
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa / Negocio *</label>
+              <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Correo electrónico *</label>
+              <input type="email" id="email" name="email" placeholder="correo@tuempresa.com" required />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono de contacto *</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="300 000 0000" required />
+            </div>
+          </div>
+          <div class="form-group full">
+            <label for="sector">Sector de tu negocio</label>
+            <select id="sector" name="sector">
+              <option value="">Selecciona tu sector</option>
+              <option value="joyeria">Joyería y Accesorios</option>
+              <option value="retail">Comercio al por menor</option>
+              <option value="mayorista">Comercio mayorista</option>
+              <option value="manufactura">Manufactura / Producción</option>
+              <option value="servicios">Servicios</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="modulos">Módulos de interés</label>
+            <div class="checkbox-group">
+              <label class="checkbox-item"><input type="checkbox" name="modulos" value="alertas" /> Alertas de cobros</label>
+              <label class="checkbox-item"><input type="checkbox" name="modulos" value="clientes" /> Gestión de clientes</label>
+              <label class="checkbox-item"><input type="checkbox" name="modulos" value="ventas" /> Facturación de ventas</label>
+              <label class="checkbox-item"><input type="checkbox" name="modulos" value="movimientos" /> Movimientos</label>
+              <label class="checkbox-item"><input type="checkbox" name="modulos" value="inventario" /> Inventario</label>
+              <label class="checkbox-item"><input type="checkbox" name="modulos" value="dashboard" /> Dashboard</label>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label for="mensaje">Cuéntanos sobre tu negocio</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Cuántos productos manejas? ¿Cuántos clientes tienes? ¿Cuál es tu mayor reto de gestión?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="form-submit-btn">
+            <span class="btn-text">Solicitar Demo Gratuita</span>
+            <span class="btn-icon">→</span>
+          </button>
+          <p class="form-disclaimer">Al enviar este formulario aceptas que nuestro equipo te contacte para brindarte información sobre el producto.</p>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <div class="success-icon">✅</div>
+            <h4>¡Solicitud enviada!</h4>
+            <p>Nos pondremos en contacto contigo en menos de 24 horas. ¡Gracias por tu interés!</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="LOGO-PRINCIPAL-DORADO.webp" alt="Gabrielinus SAS" class="footer-logo" />
+          <p class="footer-tagline">Sistema inteligente de inventario y gestión de clientes para empresas que buscan crecer con control y precisión.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Módulos</h4>
+          <ul>
+            <li><a href="#funciones">Alertas</a></li>
+            <li><a href="#funciones">Clientes</a></li>
+            <li><a href="#funciones">Ventas</a></li>
+            <li><a href="#funciones">Movimientos</a></li>
+            <li><a href="#funciones">Inventario</a></li>
+            <li><a href="#galeria">Dashboard</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="tel:3043913362">📞 304 391 3362</a></li>
+            <li><a href="mailto:Gabriel.carrillori@unipaz.edu.co">✉ Gabriel Carrillo</a></li>
+            <li><a href="mailto:alejandro.galvisve@unipaz.edu.co">✉ Alejandro Galvis</a></li>
+            <li><a href="mailto:lesly.villacobge@unipaz.edu.co">✉ Lesly Villalobos</a></li>
+          </ul>
+        </div>
+        <div class="footer-cta-col">
+          <h4>¿Listo para empezar?</h4>
+          <p>Solicita tu demo gratuita ahora.</p>
+          <a href="#solicitar" class="btn btn-primary btn-sm" id="footer-cta">Solicitar Demo</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 <strong>Gabrielinus SAS</strong>. Todos los derechos reservados.</p>
+        <p class="footer-built">Diseñado con ❤ para potenciar tu negocio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
